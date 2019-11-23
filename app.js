@@ -21,8 +21,7 @@ document.getElementById('book-form').addEventListener('submit',function(e){
         isbn = document.getElementById('isbn').value
 
     // Initiated Book Object
-    
-
+    const book = new Book(title,author,isbn);
 
     e.preventDefault();
 });

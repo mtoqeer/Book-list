@@ -102,7 +102,7 @@ document.getElementById('book-list').addEventListener('click', function(e){
 
     // Instantiate UI
     const ui = new UI();
-
+    
     ui.deleteBook(e.target);
 
     ui.showAlert('Book Deleted Successfully!!', 'success');

@@ -20,7 +20,7 @@ document.getElementById('book-form').addEventListener('submit',function(e){
         author = document.getElementById('author').value,
         isbn = document.getElementById('isbn').value
 
-    // Initiated Book Object
+    // Instantiate Book Object
     const book = new Book(title,author,isbn);
 
     e.preventDefault();

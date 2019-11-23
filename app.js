@@ -8,10 +8,13 @@ function Book(title, author, isbn){
 
 
 // UI Contractor
-function UI(){ }
+function UI(){}
 
+// UI prototype
+UI.prototype.addBookToList = function(book){
+    console.log(book);
+}
 
-// 
 
 document.getElementById('book-form').addEventListener('submit',function(e){
 
@@ -23,5 +26,11 @@ document.getElementById('book-form').addEventListener('submit',function(e){
     // Instantiate Book Object
     const book = new Book(title,author,isbn);
 
+    // Instantiate UI
+    const ui = new UI();
+ 
+    ui.addBookToList(book);
+
     e.preventDefault();
 });
+

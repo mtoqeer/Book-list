@@ -10,3 +10,19 @@ function Book(title, author, isbn){
 // UI Contractor
 function UI(){ }
 
+
+// 
+
+document.getElementById('book-form').addEventListener('submit',function(e){
+
+    // Get Values
+    const title = document.getElementById('title').value,
+        author = document.getElementById('author').value,
+        isbn = document.getElementById('isbn').value
+
+    // Initiated Book Object
+    
+
+
+    e.preventDefault();
+});

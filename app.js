@@ -7,3 +7,6 @@ function Book(title, author, isbn){
 }
 
 
+// UI Contractor
+function UI(){ }
+
